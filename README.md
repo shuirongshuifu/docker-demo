@@ -44,7 +44,7 @@ chmod +x deploy-to-server.sh
 
 ### 4️⃣ 配置nginx代理
 
-在nginx配置中添加：
+在服务器上的主nginx配置中添加：
 ```nginx
 location /dockerDemo/ {
     proxy_pass http://localhost:20000/;

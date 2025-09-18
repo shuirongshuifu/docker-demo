@@ -2,10 +2,10 @@
 
 echo "🚀 开始部署Docker镜像到服务器..."
 
-# 配置变量
+# 配置变量（镜像名称在构建时指定，容器名称在运行时指定）
+CONTAINER_NAME="html-app-container"
 IMAGE_NAME="my-html-app"
 TAR_FILE="${IMAGE_NAME}.tar"
-CONTAINER_NAME="html-app-container"
 PORT="20000"
 
 # 检查tar文件是否存在
